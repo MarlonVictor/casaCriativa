@@ -1,0 +1,295 @@
+/* Global */
+
+body {
+    margin: 0;
+    background-color: #e5e5e5;
+    color: #25282B;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body.hideScroll {
+    overflow: hidden;
+}
+
+a {
+    color: #ff5E84;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+p .descricao {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.button {
+    color: white;
+    background-color: #ff5E84;
+    cursor: pointer;    
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 6px 18px rgba(255, 0, 92, 0.2 );
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 400ms;
+}
+
+.button:hover {
+    text-decoration: none;
+    background-color: #0984e3;
+    box-shadow: none;
+}
+
+/* Lado Esquerdo */
+
+body #container {
+    width: 80%;
+    max-width: 1080px;
+    margin: 80px auto;
+    display: flex;
+
+}
+
+body #intro {
+    width: 300px;
+    text-align: center;
+    margin-right: 64px;
+}
+
+main {
+    margin: 32px 0;
+    
+}
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 32px 0;
+}
+
+button {
+    color: #ff5E84;
+    border: none;
+    font-weight: bold;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+footer {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #777;
+}
+footer a {
+    color: #777;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff5E84;
+    font-weight: bold;
+}
+
+/* Lado Direito */
+
+.idea {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 33px;
+    box-shadow: 0 4px 16px rgba(1, 1, 1, 0.1);
+}
+
+.idea img {
+    width: 60px;
+    height: 60px;
+    margin-right: 33px;
+}
+
+.idea h3 {
+    margin: 0
+}
+
+.idea p {
+    margin: 8px 0;
+    color: #777;
+}
+.idea .descricao {
+    margin: 16px 0;
+}
+
+/* Modal */
+
+#modal {
+    background-color: #ff5E84;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#modal.addScroll {
+    overflow: auto;
+}
+
+#modal .conteudo {
+    margin: 40px auto;
+    color: white;
+}
+
+#modal .conteudo h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal form {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.conteudo form div:nth-child(3), .conteudo form div:nth-child(4), .conteudo form div:nth-child(5) {
+    grid-column: span 2;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid rgba(121, 0, 28, 0.513);
+    outline: none;
+    font-size: 16px;
+}
+
+form label {
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+form a {
+    background-color: #ffffff22;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
+    transition: 400ms;
+}
+
+form a:hover {
+    background-color: white;
+    color: #ff5E84;
+    text-decoration: none;
+}
+form button {
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms;
+}
+
+form button:hover {
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
+}
+
+#modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Ideias */
+#pag_ideas #container {
+    display: block;
+}
+
+#pag_ideas header { 
+    display: flex;
+    justify-content: space-between;
+}
+
+#pag_ideas nav {
+    display: flex;
+    align-items: center;
+}
+
+#pag_ideas nav li {
+    list-style: none;
+    margin-right: 16px;
+}
+
+#pag_ideas nav li a{
+    color: #25282B;
+}
+
+#pag_ideas nav li a.button{
+    color: white;
+}
+
+#pag_ideas nav li:last-child {
+    margin: 0;
+}
+
+section#title {
+    text-align: center;
+    margin: 64px 0;
+} 
+
+section#title p {
+    margin: 0;
+    opacity: 0.7;
+}
+
+section#title h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+section#ideias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section#ideias .idea {
+    margin: 0;
+}
+
+#footer {
+    margin-top: 64px;
+    text-align: center;
+}
