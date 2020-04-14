@@ -2,9 +2,12 @@
 
  Essa é uma aplicação web a fim de ajudar as pessoas com ideias para passar um tempo em casa, por conta desse momento complicado que estamos passando (projeto construído em quarentena).
 
-### Como acessar
+### Como utilizar
 
-Para usar o aplicativo, é preciso ter o **Node.JS** instalado, executar no terminal dentro da pasta clone desse repositório o código **npm run start** e acessar [http://localhost:3000](http://localhost:3000) em seu navegador.
+1. Ter o **Node.js** instalado.
+2. Clonar esse repositório. 
+3. Digitar **npm run start** no terminal.
+4. Acessar [http://localhost:3000](http://localhost:3000) em seu navegador.
 
 Pagina Inicial:
 ![screenshot1](https://user-images.githubusercontent.com/62356988/77852946-ad612480-71b7-11ea-84b5-83a2794f7ffb.jpg)
