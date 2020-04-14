@@ -2,7 +2,7 @@
 
  Essa é uma aplicação web a fim de ajudar as pessoas com ideias para passar um tempo em casa, por conta desse momento complicado que estamos passando (projeto construído em quarentena).
 
-### Como utilizar
+### Como utilizar:
 
 1. Ter o **Node.js** instalado.
 2. Clonar esse repositório. 
