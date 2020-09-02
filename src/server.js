@@ -13,38 +13,40 @@ server.use(express.urlencoded({ extended: true }))
 
 // Configuração do nunjucks
 const nunjucks = require("nunjucks")
-nunjucks.configure("views", {
+nunjucks.configure("src/views", {
     express: server,
-    noCache: true, //boolean
+    noCache: true, 
 })
 
 // Criei uma Rota 
 server.get("/", function(req, res) {
 
     db.all(`SELECT * FROM ideas`, function(err, rows) {
-            if (err) {
-                console.log(err)
-                return res.send("Erro no Banco de Dados!")
-            }
-    
-            const reversedIdeas = [...rows].reverse()
+        if (err) {
+            console.log(err)
+            const msg = "Erro no Banco de Dados!"
+            return res.send(msg)
+        }
 
-            let lastIdeas = []
-            for (let idea of reversedIdeas) {
-                if(lastIdeas.length < 2) {
-                    lastIdeas.push(idea)
-                }
-            }
+        const reversedIdeas = [...rows].reverse()
 
-            return res.render("index.html", { ideas: lastIdeas })
-                })   
+        let lastIdeas = []
+        for (let idea of reversedIdeas) {
+            if(lastIdeas.length < 2) {
+                lastIdeas.push(idea)
+            }
+        }
+
+        return res.render("index.html", { ideas: lastIdeas })
+    })   
 })
 
 server.get("/ideias", function(req, res) {
     db.all(`SELECT * FROM ideas`, function(err, rows) {
         if (err) {
             console.log(err)
-            return res.send("Erro no Banco de Dados!")
+            const msg = "Erro no Banco de Dados!"
+            return res.send(msg)
         }
 
         const reversedIdeas = [...rows].reverse()
@@ -54,6 +56,7 @@ server.get("/ideias", function(req, res) {
 })
 
 server.post("/", function(req, res) {
+
     // Inserir Dados
     const query =`
         INSERT INTO ideas(
@@ -77,7 +80,8 @@ server.post("/", function(req, res) {
     db.run(query, values, function(err) {
         if (err) {
             console.log(err)
-            return res.send("Erro no Banco de Dados!")
+            const msg = "Erro no Banco de Dados!"
+            return res.send(msg)
         }
 
        return res.redirect("/ideias")

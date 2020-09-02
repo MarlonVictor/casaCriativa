@@ -4,19 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <link href="/style.css" rel="stylesheet" type="text/css">
-    </link>
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/792/792064.svg">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
     <title>Casa Criativa</title>
 </head>
 
 <body>
-    
     <!-- Lado Esquerdo -->
-
     <div id="container">
-
         <section id="intro">
-
             <header>
                 <a href="/">
                     <img src="logo.png" alt="Logo do Site">
@@ -45,23 +41,17 @@
             <footer>
                 Com ♥️ <a href="http://rocketseat.com.br" target="_blank">Rocketseat</a>
             </footer>
-            
         </section>
 
     <!-- Lado Direito -->
-
         <section id="ultimas-ideias">
-
             {% include "all_ideas.html" %}
-
         </section>
     </div>
 
     <!-- Modal -->
-
     {% include "modal.html" %}
 
     <script src="/script.js"></script>
 </body>
-
 </html>

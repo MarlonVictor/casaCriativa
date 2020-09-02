@@ -2,10 +2,10 @@
   "name": "omnistack-11",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node serve.js",
-    "dev": "nodemon server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +15,8 @@
     "nodemon": "^2.0.2",
     "nunjucks": "^3.2.1",
     "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "dot-prop": "^5.2.0"
   }
 }
