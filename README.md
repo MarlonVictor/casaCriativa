@@ -1,25 +1,18 @@
-# Casa Criativa
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/62356988/90342162-7b245800-dfdc-11ea-968d-c39ae5948410.png">
+    <img src="https://image.flaticon.com/icons/svg/792/792064.svg" width="65px">  
+</p>
 
- Essa é uma aplicação web a fim de ajudar as pessoas com ideias para passar um tempo em casa, por conta desse momento complicado que estamos passando (projeto construído em quarentena).
+<p align="center">
+  <img src="https://img.shields.io/github/repo-size/MarlonVictor/casaCriativa?color=%23ff5E84&logo=GitHub&style=flat-square">
+  <img src="https://img.shields.io/github/stars/MarlonVictor/casaCriativa?color=%23ff5E84&logo=github&style=flat-square">
+</p>
 
-### Como utilizar:
+## Sobre
+Essa é uma Aplicação Web a fim de ajudar as pessoas com ideias para passar um tempo em casa, por conta do momento complicado que estamos passando (projeto construído em quarentena).  
+Nela você pode tanto publicar novas ideias quanto ver ideias já cadastradas por outro usuário.
 
-1. Ter o **Node.js** instalado.
-2. Clonar esse repositório. 
-3. Digitar **npm run start** no terminal.
-4. Acessar [http://localhost:3000](http://localhost:3000) em seu navegador.
-
-Pagina Inicial:
-![screenshot1](https://user-images.githubusercontent.com/62356988/77852946-ad612480-71b7-11ea-84b5-83a2794f7ffb.jpg)
-
-Para registrar uma nova ideia, essa página será exibida:
-![screenshot2](https://user-images.githubusercontent.com/62356988/77852942-ab976100-71b7-11ea-86ac-67b2270c0449.jpg)
-
-O banco de dados vem com seis ideias já registradas:
-![screenshot3](https://user-images.githubusercontent.com/62356988/77852945-acc88e00-71b7-11ea-8e94-ed0b5794153d.png)
-
-## Ferramentas utilizadas:
-
+## Tecnologias Utilizadas
 * HTML5
 * CSS3
 * JavaScript
@@ -27,3 +20,34 @@ O banco de dados vem com seis ideias já registradas:
 * Nunjucks
 * NodeJs
 * SQLite3
+
+## Resultado
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/62356988/88417022-945c2f00-cdb7-11ea-96a8-aafc812988dd.gif">
+</p>
+
+## Como Rodar
+
+### Clone o repositório
+```bash
+$ git clone https://github.com/MarlonVictor/casaCriativa.git
+```
+
+### Executar a aplicação
+```bash
+
+# Instalar Dependências
+$ npm install
+
+# Executar Aplicação 
+$ npm start
+```
+* Vá para [http://localhost:3000](http://localhost:3000) para ver o resultado.
+
+## Quem ministrou?
+As aulas foram ministradas pelo mestre [Mayk Brito](https://www.gitshowcase.com/maykbrito) nas aulas da Semana Omnistack #11.
+
+___
+<p align="center">
+  Feito com <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f49c.png" width="20px"> by Marlon Victor
+</p>
